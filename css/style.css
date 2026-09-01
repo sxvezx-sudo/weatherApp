@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: blueviolet;
+}
+
+.weather-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    max-width: 425px;
+    max-height: 500px;
+
+    border-radius: 24px;
+    padding: 2rem;
+
+    flex-grow: 1;
+    
+    background-color: white;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+
+    width: 100%;
+}
+
+.search {
+    padding: 0.75rem; 
+
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    align-content: center;
+    justify-items: center;
+
+    width: 100%;
+}
+
+.temperature {
+    display: flex;
+
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.temperature span {
+    font-size: 1rem;    
+    margin-top: 12px;
+}
+.hourly-weather {
+    display: flex;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.weather-lists {
+    display: flex;
+    gap: 8px;
+    
+}
+
+.weather-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    align-content: center;
+    justify-items: center;
+    
+    padding: 1rem;
+    background-color: yellow;
+}
+
+.weather-icon  {
+    width: 96px;
+    aspect-ratio: 1 / 1;
+}
+
+.weather-icon__li {
+    width: 28px;
+}
