@@ -1,23 +1,19 @@
-import { getCity } from "../api/geocoding.js";
-import { getTempurature } from "../api/weather.js";
+import { getWeather } from "./service/weatherService.js"
+import { renderWeather } from "./ui/weatherUi.js"
 
-const searchInput = document.querySelector(".search-input")
+const searchInput = document.querySelector(".search-input");
 
-searchInput.addEventListener("keyup", (e) => {
+searchInput.addEventListener("keyup", async (e) => {
+    if(e.key !== "Enter") {
+        return
+    }
+
     const cityName = searchInput.value.trim();
-    if(e.key === "Enter" && cityName) {
-        return getCity(cityName)
-            .then((city) => {
-                getTempurature(city)
-            })
-            .then((temp) => {
-                return renderTemp(temp);
-            })
-            .then(result => {
-                console.log(result);
-            })
-            .catch(error => {
-                console.log(error);
-            })
+
+    try {
+        const weather = await getWeather(cityName);
+        renderWeather(weather);
+    } catch (error) {
+        console.log(error) 
     }
 })
