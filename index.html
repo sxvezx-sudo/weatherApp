@@ -18,8 +18,8 @@
 
         <!-- Search Weather Section -->
         <div class="search-container">
-            <input type="text" class="search" placeholder="New York" required>
-            <button class="locationBtn">My Location</button>
+            <input type="text" class="search-input" placeholder="New York" required>
+            <button class="locationBtn"></button>
         </div>
 
         <!-- Weather Seciton -->
@@ -30,42 +30,43 @@
          </div>
 
          <!-- Weather Lists Seciton -->
-          <div class="hourly-weather">
-            <ul class="weather-lists">
-                <li class="weather-item">
-                    <span class="time">00:00</span>
-                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__li">
-                    <span class="tempurature tempurature__li">24°</span>
+          <div class="hourly-container">
+            <ul class="hourly-lists">
+                <li class="hourly-item">
+                    <span class="hourly">00:00</span>
+                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__sm">
+                    <span class="tempurature tempurature__sm">24°</span>
                 </li>
-                <li class="weather-item">
-                    <span class="time">00:00</span>
-                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__li">
-                    <span class="tempurature tempurature__li">24°</span>
+                <li class="hourly-item">
+                    <span class="hourly">00:00</span>
+                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__sm">
+                    <span class="tempurature tempurature__sm">24°</span>
                 </li>
-                <li class="weather-item">
-                    <span class="time">00:00</span>
-                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__li">
-                    <span class="tempurature tempurature__li">24°</span>
+                <li class="hourly-item">
+                    <span class="hourly">00:00</span>
+                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__sm">
+                    <span class="tempurature tempurature__sm">24°</span>
                 </li>
-                <li class="weather-item">
-                    <span class="time">00:00</span>
-                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__li">
-                    <span class="tempurature tempurature__li">24°</span>
+                <li class="hourly-item">
+                    <span class="hourly">00:00</span>
+                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__sm">
+                    <span class="tempurature tempurature__sm">24°</span>
                 </li>
-                <li class="weather-item">
-                    <span class="time">00:00</span>
-                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__li">
-                    <span class="tempurature tempurature__li">24°</span>
+                <li class="hourly-item">
+                    <span class="hourly">00:00</span>
+                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__sm">
+                    <span class="tempurature tempurature__sm">24°</span>
                 </li>
-                <li class="weather-item">
-                    <span class="time">00:00</span>
-                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__li">
-                    <span class="tempurature tempurature__li">24°</span>
+                <li class="hourly-item">
+                    <span class="hourly">00:00</span>
+                    <img src="./assets/icon/clouds.svg" alt="" class="weather-icon weather-icon__sm">
+                    <span class="tempurature tempurature__sm">24°</span>
                 </li>
             </ul>
           </div>
     </article>
     </div>
-    <script type="module" src="scr/app.js"></script>
+    <script type="module" src="src/app.js"></script>
+    <script type="module" src="src/service/weatherService.js"></script>
 </body>
 </html>
