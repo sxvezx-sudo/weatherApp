@@ -9,9 +9,11 @@ searchInput.addEventListener("keyup", async (e) => {
     }
 
     const cityName = searchInput.value.trim();
+    if (!cityName) return;
 
     try {
         const weather = await getWeather(cityName);
+        console.log(weather)
         renderWeather(weather);
     } catch (error) {
         console.log(error) 
